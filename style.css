@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+main img{
+    width: 40%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 8rem 8rem 8rem;
+    background-color: #F2F2F2;
+    gap: 3rem;
+}
+
+main div{
+    width: 40%;
+}
+
+main h2{
+    font-size: 50px;
+    font-weight: 450; 
+    line-height: 1.2;
+}
+
+main p{
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main button{
+    all:unset;
+    background-color: #038F26 ;
+    padding: 13px 37px;
+    color: white;
+}
+
+main button a{
+    color: white;
+}
+
+.bag1, .bag2, .bag3{
+    display: flex;
+    gap: 1rem;
+    padding: 8rem 8rem;
+}
+
+.bag2{
+    padding: 0 8rem;
+}
+
+.bag1 img, .bag2 img, .bag3 img{
+    width: 80%;
+}
+
+.bag11, .bags22, .bags33{
+    text-align: center;
+}
+
+.bigimg img{
+    width: 85%;
+}
+
+.bigimg{
+    background-color: #403F3B;
+    display: flex;
+    align-items: center;
+    padding-left: 9rem;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.index ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.togglers{
+    display: none;
+}
+
+    
+@media screen and (max-width:992px) {
+    main{
+        padding: 4rem;
+
+    }
+    .bag1, .bag2, .bag3{
+        padding: 4rem;
+    }
+}
+    
+@media screen and (max-width:768px) {
+    main h2{
+        font-size: 38px;
+    }
+
+    main button{
+        padding: 7px 18px;
+        font-size: 12px;
+    }
+
+    .bag1, .bag2, .bag3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    main{
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 4rem 1.5rem;
+    }
+
+    main img, main div{
+        width: 90%;
+    }
+
+    .bag1, .bag2, .bag3{
+        text-align: center;
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        padding: 4rem 1.5rem;
+    }
+    .index ul{
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main button{
+        font-size: 20px;
+    }
+
+    nav ul{
+        position: fixed;
+        background-color: rgb(223, 223, 223);
+        flex-direction: column;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        text-align: center;
+        padding: 2rem 0;
+        transition: .5s;
+    }
+
+    .togglers{
+        display: block;
+        font-size: 30px;
+    }
+
+    .ri-close-large-line{
+        display: none;
+    }
+}
+
+
+
+    
+
+
+
+
